@@ -127,3 +127,5 @@ The Essential JS 2 JavaScript controls can be initialized by using either of the
 [ListView customization](./customizing-templates/)
 
 [Virtualization](./virtualization/)
+
+N> You can refer to our [JavaScript ListView](https://www.syncfusion.com/javascript-ui-controls/js-listview) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript ListView Example](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/listview/default.html) that show you how to render and configure the ListView in JavaScript.
