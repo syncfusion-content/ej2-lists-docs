@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Listview with hyper link navigation in ##Platform_Name## Listview control
 
-We can use `anchor` tag along with `href` attribute in our ListView [`template`](../../api/list-view#template) property for navigation.
+We can use `anchor` tag along with `href` attribute in our ListView [`template`](../../api/list-view/#template) property for navigation.
 
 ```ts
 

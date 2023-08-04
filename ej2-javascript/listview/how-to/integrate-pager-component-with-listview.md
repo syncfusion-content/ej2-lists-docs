@@ -27,7 +27,7 @@ The [`totalRecordsCount`](https://ej2.syncfusion.com/documentation/api/pager/#to
 
 With the help of the `query` property of ListView, the user can specify the number of records to be displayed in the current page.
 
-The [`query`](../../api/list-view#query) property helps in splitting the entire datasource based on our convenience. In the sample provided below, when clicking the next button in pager, it fetches the datasource based on page size and current page of Pager component.
+The [`query`](../../api/list-view/#query) property helps in splitting the entire datasource based on our convenience. In the sample provided below, when clicking the next button in pager, it fetches the datasource based on page size and current page of Pager component.
 
 ```ts
  click: function () {
