@@ -15,9 +15,9 @@ The filtered data can be displayed in the ListView control depending upon on use
 
 * Render a textbox to get input for filtering data.
 
-* Render ListView with [`dataSource`](../../api/list-view#datasource), and set the [`sortOrder`](../../api/list-view#sortorder) property.
+* Render ListView with [`dataSource`](../../api/list-view/#datasource), and set the [`sortOrder`](../../api/list-view/#sortorder) property.
 
-* Bind the `keyup` event for textbox to perform filtering operation. To filter list data, pass the list data source to the `DataManager`, manipulate the data using the [`executeLocal`](../../api/data/dataManager#executelocal) method, and then update filtered data as ListView dataSource.
+* Bind the `keyup` event for textbox to perform filtering operation. To filter list data, pass the list data source to the `DataManager`, manipulate the data using the [`executeLocal`](../../api/data/dataManager/#executelocal) method, and then update filtered data as ListView dataSource.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -46,4 +46,4 @@ The filtered data can be displayed in the ListView control depending upon on use
 {% previewsample "page.domainurl/code-snippet/listview/filter-cs1" %}
 {% endif %}
 
-> In this demo, data has been filtered with starting character of the list items. You can also filter list items with ending character by passing the `endswith` in [where](../../api/data/query#where) clause instead of `startswith`.
+> In this demo, data has been filtered with starting character of the list items. You can also filter list items with ending character by passing the `endswith` in [where](../../api/data/query/#where) clause instead of `startswith`.

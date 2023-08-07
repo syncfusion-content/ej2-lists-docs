@@ -28,7 +28,7 @@ The dual list supports:
 * Moving selected data from one list to another.
 * Filtering the list by using a client-side typed character.
 
-In the ListView control, sorting is enabled using the [sortOrder](../../api/list-view/#sortorder) property, and the [select](../../api/list-view#select) event is triggered while selecting an item. Here, the select event is triggered to enable and disable button states.
+In the ListView control, sorting is enabled using the [sortOrder](../../api/list-view/#sortorder) property, and the [select](../../api/list-view/#select) event is triggered while selecting an item. Here, the select event is triggered to enable and disable button states.
 
 ## Manipulating data
 
@@ -42,7 +42,7 @@ The functionality of the second button is the same as above, and data is transfe
 
 ## Moving selected item from one list to another list (>) and (<)**
 
-The [Select](../../api/list-view#select) event is triggered when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be enabled when selecting an item in lists.
+The [Select](../../api/list-view/#select) event is triggered when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be enabled when selecting an item in lists.
 
 ## Filtering method
 
@@ -50,7 +50,7 @@ The filtering method is used to filter list items when typing a character in the
 
 ## Sorting
 
-By using the dual list, list items can be sorted in the ListView control using the [sortOrder](../../api/list-view#sortorder) property.
+By using the dual list, list items can be sorted in the ListView control using the [sortOrder](../../api/list-view/#sortorder) property.
 You can enable sorting in one ListView; in the same order, data can be transferred to another ListView.
 
 {% if page.publishingplatform == "typescript" %}

@@ -74,7 +74,7 @@ In this section, we will discuss about ListView data manipulations.
 
 ### Add Item
 
-We can add list item using [`addItem`](../../api/list-view#additem) API. This will accept array of data as argument.
+We can add list item using [`addItem`](../../api/list-view/#additem) API. This will accept array of data as argument.
 
 ```ts
 
@@ -86,7 +86,7 @@ In the below sample, you can add new fruit item by clicking add button which wil
 
 ### Remove item
 
-We can remove list item using [`removeItem`](../../api/list-view#removeitem) API. This will accept fields with `id` or list item element as argument.
+We can remove list item using [`removeItem`](../../api/list-view/#removeitem) API. This will accept fields with `id` or list item element as argument.
 
 ```ts
 
@@ -98,7 +98,7 @@ In the below sample, you can remove fruit by hovering the fruit item which will 
 
 ### Sort Items
 
-Listview can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](../../api/list-view#sortorder) as `Ascending` or `Descending`.
+Listview can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](../../api/list-view/#sortorder) as `Ascending` or `Descending`.
 
 ```ts
 
@@ -120,7 +120,7 @@ In the below sample, we have sorted fruits in `Ascending` order. To sort it in d
 
 ### Filter Items
 
-Listview data can be filtered with the help of [`dataManager`](../../data/getting-started/). After filtering the data, update ListView [`dataSource`](../../api/list-view#datasource) with filtered data.
+Listview data can be filtered with the help of [`dataManager`](../../data/getting-started/). After filtering the data, update ListView [`dataSource`](../../api/list-view/#datasource) with filtered data.
 
 ```ts
 

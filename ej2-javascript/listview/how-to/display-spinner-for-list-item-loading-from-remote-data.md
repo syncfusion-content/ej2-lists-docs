@@ -50,7 +50,7 @@ let listviewInstance: ListView = new ListView({
 listviewInstance.appendTo("#element");
 ```
 
-Here, the data is fetched from `Northwind` Service URL; it takes a few seconds to load the data. To enhance the UI, the spinner control has been rendered initially. After the data is loaded from remote URL, the spinner control will be hidden in ListView [actionComplete](../../api/list-view#actioncomplete) event.
+Here, the data is fetched from `Northwind` Service URL; it takes a few seconds to load the data. To enhance the UI, the spinner control has been rendered initially. After the data is loaded from remote URL, the spinner control will be hidden in ListView [actionComplete](../../api/list-view/#actioncomplete) event.
 
 {% if page.publishingplatform == "typescript" %}
 
