@@ -28,7 +28,7 @@ ListView.Inject(Virtualization);
 
 ## Getting started
 
-UI virtualization can be enabled in the ListView by setting the [`enableVirtualization`](../api/list-view#enablevirtualization) property to true.
+UI virtualization can be enabled in the ListView by setting the [`enableVirtualization`](../api/list-view/#enablevirtualization) property to true.
 
 It has two types of scrollers as follows:
 

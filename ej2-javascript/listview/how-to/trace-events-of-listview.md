@@ -14,8 +14,8 @@ domainurl: ##DomainURL##
 The ListView control triggers events based on its actions. The events can be used as extension points to perform
 custom operations. Refer to the following steps to trace the ListView events:
 
-1. Render the ListView with [dataSource](../../api/list-view#datasource), and bind the [`actionBegin`](../../api/list-view#actionbegin),
-[`actionComplete`](../../api/list-view#actioncomplete), and [`select`](../../api/list-view#select) events.
+1. Render the ListView with [dataSource](../../api/list-view/#datasource), and bind the [`actionBegin`](../../api/list-view/#actionbegin),
+[`actionComplete`](../../api/list-view/#actioncomplete), and [`select`](../../api/list-view/#select) events.
 
 2. Perform custom operations in actionBegin, actionComplete, and select events.
 

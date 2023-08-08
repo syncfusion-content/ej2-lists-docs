@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Chat window user interface using listview in ##Platform_Name## Listview control
 
-ListView can be customized as chat window. To achieve that, use the ListView [template](../../api/list-view#template) property and [Avatar](../../avatar/getting-started) control.
+ListView can be customized as chat window. To achieve that, use the ListView [template](../../api/list-view/#template) property and [Avatar](../../avatar/getting-started) control.
 
     * The Listview template property is used to showcase the ListView as chat window.
     * Avatar control is used to design the image of contact person.
@@ -51,7 +51,7 @@ In ListView template, we have rendered the list items based on receiver and send
 ## Adding messages to chat window
 
     * Use textbox to get message from user.
-    * Add the textbox message to ListView dataSource using [addItem](../../api/list-view#additem) method.
+    * Add the textbox message to ListView dataSource using [addItem](../../api/list-view/#additem) method.
 
 ```ts
 document.getElementById("btn").addEventListener("click", e => {

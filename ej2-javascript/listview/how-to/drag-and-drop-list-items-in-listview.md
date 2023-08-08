@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 In ListView control, we don't have drag and drop support. But we can achieve this requirement using [`TreeView`](https://ej2.syncfusion.com/documentation/treeview/getting-started/) control with ListView appearance.
 
-Drag and Drop in TreeView control was enabled by setting [`allowDragAndDrop`](../../api/treeview#allowdraganddrop) to `true`.
+Drag and Drop in TreeView control was enabled by setting [`allowDragAndDrop`](../../api/treeview/#allowdraganddrop) to `true`.
 
 ```ts
 
@@ -26,7 +26,7 @@ let treeViewInstance: TreeView = new TreeView({
 
 ```
 
-The TreeView control is used to represent hierarchical data in a tree like structure. So, list items in TreeView can be dropped to child of target element. we can prevent this behaviour by cancelling the [`nodeDragStop`](../../api/treeview#nodedragstop) and [`nodeDragging`](../../api/treeview#nodedragging) events.
+The TreeView control is used to represent hierarchical data in a tree like structure. So, list items in TreeView can be dropped to child of target element. we can prevent this behaviour by cancelling the [`nodeDragStop`](../../api/treeview/#nodedragstop) and [`nodeDragging`](../../api/treeview/#nodedragging) events.
 
 ```ts
 

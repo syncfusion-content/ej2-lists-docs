@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Dynamic listview by loading ajax html content in ##Platform_Name## Listview control
 
-We can set external `HTML` page content as [`template`](../../api/list-view#template) for our `ListView` control by making use of `AJAX` call.
+We can set external `HTML` page content as [`template`](../../api/list-view/#template) for our `ListView` control by making use of `AJAX` call.
 
 ```ts
 

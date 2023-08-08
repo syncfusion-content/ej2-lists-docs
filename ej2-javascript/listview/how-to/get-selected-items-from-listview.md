@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Get selected items from listview in ##Platform_Name## Listview control
 
-Single or many items can be selected by users in the ListView control. An API is used to get selected items from the list items. This is called as the [`getSelectedItems`](../../api/list-view#getselecteditems) method.
+Single or many items can be selected by users in the ListView control. An API is used to get selected items from the list items. This is called as the [`getSelectedItems`](../../api/list-view/#getselecteditems) method.
 
 **`getSelectedItems` method**
 
