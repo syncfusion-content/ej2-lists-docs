@@ -24,6 +24,14 @@ for (let i: number = 10; i <= 1010; i++) {
     listData.push({ name: listData[index].name, icon: listData[index].icon, imgUrl: listData[index].imgUrl, id: i.toString() });
 }
 
+var template: Function = (data: any) => {
+    var result = `<div class="e-list-wrapper e-list-avatar" >`+
+    `<span class="e-avatar e-avatar-circle ${data.icon} ${data.imgUrl ? 'hideUI' : 'showUI'  }">${data.icon}</span> <img class="e-avatar e-avatar-circle ${data.imgUrl ? 'showUI' : 'hideUI' }" ` +
+    `src="${data.imgUrl ?  data.imgUrl : ' ' }" />` +
+    `<span class="e-list-content">${data.name}</span></div>`;
+    return result;
+};
+
 let listObj: ListView = new ListView({
 
     //Set defined data to dataSource property.
@@ -42,11 +50,11 @@ let listObj: ListView = new ListView({
     showHeader: true,
 
     //Set defined customized template
-    template: '<div class="list-container"><div id="icon" class="${$imgUrl ? \'img\' : $icon }"><span class="${$imgUrl ? \'hideUI\' : \'showUI\' }"> ${icon}</span> <img class="${$imgUrl ? \'showUI\' : \'hideUI\' }" width = 45 height = 45 src="${$imgUrl ?  $imgUrl : \' \' }" /></div><div class="name">${name}</div></div>'
+    template:  template
 
 });
 
 listObj.appendTo('#ui-list');
 
-
+ 
 
