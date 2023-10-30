@@ -63,7 +63,7 @@ npm install
 
 ## Import the Syncfusion CSS styles
 
-Add ListView component’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
+To render the ListView component, need to import lists and its dependent component’s styles as given below in the `~/src/styles/styles.css` file, as shown below: 
 
 {% tabs %}
 {% highlight css tabtitle="style.css" %}
