@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Infinite scrolling is a technique that allows you to load more items as the user scrolls through a list, providing a seamless and dynamic user experience.
 
-Render the ListView with [dataSource](../../api/list-view/#datasource), and bind the [`scroll`](../../api/list-view/#scroll) events.
+Render the ListView with [dataSource](../../api/list-view/#datasource), and bind the [`scroll`](../../api/list-view/#scroll) event.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
