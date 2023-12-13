@@ -240,7 +240,7 @@ var listviewInstance = new ej.lists.ListView({
 //Render initialized ListView
 listviewInstance.appendTo("#listview");
 
-backBtn = document.querySelector(".e-but-back");
+backBtn = document.querySelector(".e-back-button");
 title = document.querySelector(".header-content");
 title.addEventListener("click", navigateBack);
 
@@ -259,7 +259,7 @@ function onComplete() {
       element.textContent = ` > ${text}`;
       title.appendChild(element);
 
-      // Recalcualte levels, Since an element is added
+      // Recalculate levels, Since an element is added
       calculateLevelForElements();
     }
   }
@@ -271,7 +271,7 @@ backBtn.addEventListener("click", function () {
   );
   elements[elements.length - 1].remove();
 
-  // Recalcualte levels, Since an element is removed
+  // Recalculate levels, Since an element is removed
   calculateLevelForElements();
 
   if (backBtn.style.display == "none") {
