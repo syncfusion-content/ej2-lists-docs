@@ -15,7 +15,11 @@ Infinite scrolling is a technique that allows you to load more items as the user
 
 Render the ListView with [dataSource](../../api/list-view/#datasource), and bind the [`scroll`](../../api/list-view/#scroll) event.
 
-{% tabs %}
+In the following sample, adding the new data while scroll. The application dynamically creates new item elements based on the data and appends them to the existing list. This process occurs without requiring a full page reload, providing a smooth and continuous user experience.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/listview/infinite-scrolling-cs1/index.ts %}
 {% endhighlight %}
@@ -23,5 +27,19 @@ Render the ListView with [dataSource](../../api/list-view/#datasource), and bind
 {% include code-snippet/listview/infinite-scrolling-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-          
+        
 {% previewsample "page.domainurl/code-snippet/listview/infinite-scrolling-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/listview/infinite-scrolling-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/listview/infinite-scrolling-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/listview/infinite-scrolling-cs1" %}
+{% endif %}
