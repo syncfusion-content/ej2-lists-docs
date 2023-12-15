@@ -30,7 +30,7 @@ let listObj_1: ListView = new ListView({
     template: loadTemplate,
     cssClass: 'e-list-template',
 });
-listObj_1.appendTo('#list-scrolling-updown');
+listObj_1.appendTo('#list-scrolling-down');
 
 var textDisplay = [{ text: 'Is currently the only way to invite someone through 0365? Just wondering down the road how organization would want to handle that with freelancers, like being able to just invite someone to teams without it impacting how many people have official access \uD83D\uDE14', id: '01' },
 { text: 'Yes, however, that feature of inviting someone from outside your organization is planned - expected closer to GA next year \uD83D\uDC4D', id: '02' },
