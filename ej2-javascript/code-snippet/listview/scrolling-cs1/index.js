@@ -21,26 +21,19 @@ var listObj_1 = new index_1.ListView({
     template: loadTemplate,
     cssClass: 'e-list-template',
 });
-listObj_1.appendTo('#list-scrolling-updown');
+listObj_1.appendTo('#list-scrolling-down');
 var textDisplay = [{ text: 'Is currently the only way to invite someone through 0365? Just wondering down the road how organization would want to handle that with freelancers, like being able to just invite someone to teams without it impacting how many people have official access \uD83D\uDE14', id: '01' },
     { text: 'Yes, however, that feature of inviting someone from outside your organization is planned - expected closer to GA next year \uD83D\uDC4D', id: '02' },
     { text: 'I guess we should switch things over to hear for a while. How long does the trial last? \uD83E\uDD14', id: '03' },
     { text: 'I think the trial is 30 days. \uD83D\uDE03', id: '04' },
     { text: 'Only 0365 only members of your organization. They said that they are listening to customer feedback and hinted that guest users would be brought in down the road \uD83D\uDE09', id: '05' },
     { text: 'Cool thanks! \uD83D\uDC4C', id: '06' }];
-var scrollTimeOut;
-var isSpinnerShown = false;
-var firstRender = true;
 var positionClassArray = ['right', 'left'];
 var positionDisplayIndex = 0;
 function onListScrolled(args) {
-    if (firstRender) {
-        showSpinnerElement();
-        firstRender = false;
-    }
     var newData = [];
     if (args.scrollDirection === "Bottom") {
-        if (Array.isArray(listObj_1.dataSource) && listObj_1.dataSource.length === 11) {
+        if (Array.isArray(listObj_1.dataSource) && listObj_1.dataSource.length === 16) {
             return;
         }
         if (args.distanceY < 100) {
@@ -49,18 +42,7 @@ function onListScrolled(args) {
                 newData.push({ text: textDisplay[i].text, id: newId, positionClass: positionClassArray[positionDisplayIndex] });
                 positionDisplayIndex = positionDisplay(positionDisplayIndex);
             }
-            if (!isSpinnerShown) {
-                ej2_popups_1.showSpinner(listObj_1.element);
-                isSpinnerShown = true;
-                var spinnerElement = listObj_1.element.querySelector('.e-spinner-inner');
-                spinnerElement.style.top = listObj_1.element.scrollTop + listObj_1.element.clientHeight + 'px';
-            }
-            clearTimeout(scrollTimeOut);
-            scrollTimeOut = setTimeout(function () {
-                hideSpinner_1();
-                isSpinnerShown = false;
-                listObj_1.addItem(newData);
-            }, 500);
+            listObj_1.addItem(newData);
         }
     }
 }
@@ -71,14 +53,6 @@ function positionDisplay(positionDisplayIndex) {
     else {
         return 0;
     }
-}
-function showSpinnerElement() {
-    ej2_popups_1.createSpinner({
-        target: listObj_1.element,
-    });
-}
-function hideSpinner_1() {
-    ej2_popups_1.hideSpinner(listObj_1.element);
 }
 function getUniqueID() {
     var timestamp = new Date().getTime();

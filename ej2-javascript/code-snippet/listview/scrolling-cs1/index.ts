@@ -3,7 +3,6 @@
  */
 
 import { ListView, ScrolledEventArgs } from '../../../src/list-view/index';
-import { createSpinner, showSpinner, hideSpinner } from '@syncfusion/ej2-popups';
 
 let data = [
     { text: "Hi Guys, Good morning! \uD83D\uDE0A, I'm very delighted to share with you the news that our team is going to launch a new mobile application", id: 'list-01', templateHeight: '90px', positionClass: 'right' },
@@ -39,20 +38,14 @@ var textDisplay = [{ text: 'Is currently the only way to invite someone through 
 { text: 'I think the trial is 30 days. \uD83D\uDE03', id: '04' },
 { text: 'Only 0365 only members of your organization. They said that they are listening to customer feedback and hinted that guest users would be brought in down the road \uD83D\uDE09', id: '05' },
 { text: 'Cool thanks! \uD83D\uDC4C', id: '06' }];
-let scrollTimeOut: any;
-let isSpinnerShown = false;
-let firstRender = true;
 let positionClassArray = ['right', 'left']
 let positionDisplayIndex = 0;
 
 function onListScrolled(args: ScrolledEventArgs) {
-    if (firstRender) {
-        showSpinnerElement();
-        firstRender = false;
-    }
+    
     let newData: { [key: string]: Object; }[] | { text: string; id: string; positionClass: string }[] = []
     if (args.scrollDirection === "Bottom") {
-        if (Array.isArray(listObj_1.dataSource) && listObj_1.dataSource.length === 11) {
+        if (Array.isArray(listObj_1.dataSource) && listObj_1.dataSource.length === 16) {
             return;
         }
         if(args.distanceY < 100) {
@@ -61,18 +54,7 @@ function onListScrolled(args: ScrolledEventArgs) {
                 newData.push({ text: textDisplay[i].text, id: newId, positionClass: positionClassArray[positionDisplayIndex] });
                 positionDisplayIndex = positionDisplay(positionDisplayIndex);
             }
-            if (!isSpinnerShown) {
-                showSpinner(listObj_1.element);
-                isSpinnerShown = true;
-                let spinnerElement = listObj_1.element.querySelector('.e-spinner-inner');
-                (spinnerElement as any).style.top = listObj_1.element.scrollTop + listObj_1.element.clientHeight + 'px';
-            }
-            clearTimeout(scrollTimeOut);
-            scrollTimeOut = setTimeout(() => {
-                hideSpinner_1()
-                isSpinnerShown = false;
-                listObj_1.addItem(newData);
-            }, 500)
+            listObj_1.addItem(newData);
         }
     }
 }
@@ -83,15 +65,6 @@ function positionDisplay(positionDisplayIndex: number): number {
     } else {
         return 0;
     }
-}
-
-function showSpinnerElement() {
-    createSpinner({
-        target: listObj_1.element,
-    });
-}
-function hideSpinner_1() {
-    hideSpinner(listObj_1.element)
 }
 
 function getUniqueID() {

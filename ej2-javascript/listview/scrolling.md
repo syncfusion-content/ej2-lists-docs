@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Infinite scrolling of listview in ##Platform_Name## Listview control | Syncfusion
-description: Learn here all about infinite scrolling of listview in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Scrolling of listview in ##Platform_Name## Listview component | Syncfusion
+description: Learn here all about Scrolling of listview in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Listview Infinite scrolling 
+control: Listview Scrolling 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Infinite scrolling in ##Platform_Name## Listview control
+# Scrolling in ##Platform_Name## Listview component
 
-Infinite scrolling is a technique that allows you to load more items as the user scrolls through a list, providing a seamless and dynamic user experience.
+Scrolling is a technique that allows you to load more items as the user scrolls through a list, providing a seamless and dynamic user experience.
 
 Render the ListView with [dataSource](../../api/list-view/#datasource), and bind the [`scroll`](../../api/list-view/#scroll) event.
 
@@ -27,7 +27,7 @@ In the given example, new data is seamlessly added while scrolling. The applicat
 {% include code-snippet/listview/infinite-scrolling-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "page.domainurl/code-snippet/listview/infinite-scrolling-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
