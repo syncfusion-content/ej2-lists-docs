@@ -1,6 +1,4 @@
 
-
-
 import { ListView } from '@syncfusion/ej2-lists';
 
 //define the array of JSON
@@ -236,28 +234,28 @@ let text:string, backBtn:HTMLElement, title, headerElement, hasChild = false;
 
 //Initialize ListView component
 let listviewInstance = new ListView({
-  //set the data to dataSource property
-  dataSource: continent,
-  // map the groupBy field with category column
+    //set the data to dataSource property
+    dataSource: continent,
+    // map the groupBy field with category column
   fields: { tooltip: "text" },
-  headerTemplate: '<div class="header-content"><span>Continent</span></div>',
-  showHeader: true,
-  select: onSelect,
+    headerTemplate: '<div class="header-content"><span>Continent</span></div>',
+    showHeader: true,
+    select: onSelect,
   actionComplete: onComplete
-});
-//Render initialized ListView
+  });
+  //Render initialized ListView
 listviewInstance.appendTo("#listview");
-
-backBtn = document.querySelector(".e-but-back") as HTMLElement;
+  
+  backBtn = document.querySelector('.e-back-button') as HTMLElement;
 title = document.querySelector(".header-content");
 title.addEventListener("click", navigateBack);
-
-function onSelect(e:any) {
-  text = e.text;
+  
+  function onSelect(e: any) {
+    text = e.text;
   hasChild = !e.item.classList.contains("e-has-child");
-}
-
-function onComplete() {
+  }
+  
+  function onComplete() {
   if (!hasChild) {
     headerElement = document.querySelector(".header-content").innerHTML;
     title = document.querySelector(".nested-header .header-content");
@@ -266,12 +264,12 @@ function onComplete() {
       let element = document.createElement("span");
       element.textContent = ` > ${text}`;
       title.appendChild(element);
-
-      // Recalcualte levels, Since an element is added
-      calculateLevelForElements();
+  
+        // Recalculate levels, Since an element is added
+        calculateLevelForElements();
+      }
     }
   }
-}
 
 backBtn.addEventListener("click", function () {
   let elements = document.querySelectorAll(
@@ -279,7 +277,7 @@ backBtn.addEventListener("click", function () {
   );
   elements[elements.length - 1].remove();
 
-  // Recalcualte levels, Since an element is removed
+  // Recalculate levels, Since an element is removed
   calculateLevelForElements();
 
   if (backBtn.style.display == "none") {
@@ -295,20 +293,17 @@ function calculateLevelForElements() {
     ".nested-header .header-content span"
   );
   let index = 0;
-  for (let i = elements.length - 1; i >= 0; i--) {
-    (elements[index] as any).level = i;
-    index++;
-  }
-}
-
-// Navigate back event handler based on element's level
-function navigateBack(event:any) {
-  if (event.target && event.target.level) {
-    for (let i = 0; i <= event.target.level; i++) {
-      backBtn.click();
+    for (let i = elements.length - 1; i >= 0; i--) {
+      (elements[index] as any).level = i;
+      index++;
     }
   }
-}
-
-
-
+  
+  // Navigate back event handler based on element's level
+  function navigateBack(event: any) {
+    if (event.target && event.target.level) {
+      for (let i = 0; i <= event.target.level; i++) {
+        backBtn.click();
+      }
+    }
+  }
