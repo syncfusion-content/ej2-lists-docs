@@ -7,32 +7,26 @@ import { ListView, ScrolledEventArgs } from '../../../src/list-view/index';
 var data = [
   {
     text: "Hi Guys, Good morning! \uD83D\uDE0A, I'm very delighted to share with you the news that our team is going to launch a new mobile application",
-    templateHeight: '90px',
     positionClass: 'right',
   },
   {
     text: "Oh! That's great \uD83D\uDE42",
-    templateHeight: '70px',
     positionClass: 'left',
   },
   {
     text: 'That is a good news \uD83D\uDE00',
-    templateHeight: '80px',
     positionClass: 'right',
   },
   {
     text: 'What kind of application we are gonna launch? \uD83E\uDD14',
-    templateHeight: '50px',
     positionClass: 'left',
   },
   {
     text: 'A kind of "Emergency Broadcast App" like being able to just invite someone to teams without it impacting how many people have official access',
-    templateHeight: '100px',
     positionClass: 'right',
   },
   {
     text: 'Who will be the client users for our applications? ',
-    templateHeight: '110px',
     positionClass: 'left',
   },
   {
@@ -82,7 +76,7 @@ let listObj_1: ListView = new ListView({
 listObj_1.appendTo('#list-scrolling-down');
 var itemsRendered = 5;
 var itemsPerScroll = 5;
-var result = [];
+var result: { text: string; positionClass: string; }[] ;
 
 function onListScrolled(args) {
   if (args.scrollDirection === 'Bottom') {
