@@ -15,7 +15,7 @@ Scrolling is a technique that allows you to load more items as the user scrolls 
 
 Render the ListView with [dataSource](../../api/list-view/#datasource), and bind the [`scroll`](../../api/list-view/#scroll) event. Within the scroll event, you can access information such as the scroll direction, event name, and scroll bar height through the distanceY parameter.
 
-In the given example, new data is seamlessly added while scrolling. The application dynamically generates new item elements based on the data and appends them to the existing list. This process occurs without requiring a full page reload, providing a smooth and continuous user experience.
+In the given example, new data is seamlessly added while scrolling. When you scrolls to the bottom and the distance scrolled is less than 100 pixels, it dynamically loads a batch of items into the list as long as there are more items to render.
 
 {% if page.publishingplatform == "typescript" %}
 
