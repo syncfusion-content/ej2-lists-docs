@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Scrolling in ##Platform_Name## Listview control
+# Scrolling in ##Platform_Name## Listview
 
 Scrolling is a technique that allows you to load more items as the user scrolls through a list, providing a seamless and dynamic user experience.
 
