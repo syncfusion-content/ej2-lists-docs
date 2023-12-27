@@ -1,10 +1,7 @@
-/**
- * ListView Default Sample
- */
 
-import { ListView, ScrolledEventArgs } from '../../../src/list-view/index';
+import { ListView, ScrolledEventArgs } from '@syncfusion/ej2-lists';
 
-var data = [
+let data: { [key: string]: Object }[] = [
   {
     text: "Hi Guys, Good morning! \uD83D\uDE0A, I'm very delighted to share with you the news that our team is going to launch a new mobile application",
     positionClass: 'right',
@@ -48,7 +45,7 @@ var data = [
   },
   { text: 'Cool thanks! \uD83D\uDC4C', positionClass: 'left' },
 ];
-function loadTemplate(data) {
+function loadTemplate(data: { positionClass: string; text: string; }) {
   var containerClass =
     data.positionClass === 'right' ? 'justify-content: flex-end' : '';
   return (
@@ -78,16 +75,16 @@ var itemsRendered = 5;
 var itemsPerScroll = 5;
 var result: { text: string; positionClass: string; }[] ;
 
-function onListScrolled(args) {
-  if (args.scrollDirection === 'Bottom') {
-    if (args.distanceY < 100) {
-      if (itemsRendered < data.length) {
-        var startIndex = itemsRendered;
-        var endIndex = Math.min(itemsRendered + itemsPerScroll, data.length);
-        result = data.slice(startIndex, endIndex);
-        listObj_1.addItem(result);
-        itemsRendered = endIndex;
-      }
+function onListScrolled(args: ScrolledEventArgs) {
+    if (args.scrollDirection === 'Bottom') {
+        if (args.distanceY < 100) {
+            if (itemsRendered < data.length) {
+                var startIndex = itemsRendered;
+                var endIndex = Math.min(itemsRendered + itemsPerScroll, data.length);
+                result = data.slice(startIndex, endIndex) as { text: string; positionClass: string; }[];
+                listObj_1.addItem(result);
+                itemsRendered = endIndex;
+            }
+        }
     }
-  }
 }
