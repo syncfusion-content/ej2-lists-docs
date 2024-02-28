@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize listview as grid layout in ##Platform_Name## Listview control | Syncfusion
+title: Change listview as grid in ##Platform_Name## Listview control | Syncfusion
 description: Learn here all about Customize listview as grid layout in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Customize listview as grid layout 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter and search list items using listview in ##Platform_Name## Listview control | Syncfusion
+title: Filter and search items using ##Platform_Name## Listview control | Syncfusion
 description: Learn here all about Filter and search list items using listview in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Filter and search list items using listview 
