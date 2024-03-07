@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create dual list in ##Platform_Name##  ListView Control | Syncfusion
-description: Learn here all about Create dual list from listview in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+title: Create dual list in ##Platform_Name## ListView Control | Syncfusion
+description: Learn here all about create dual list in Syncfusion ##Platform_Name## ListView control, it's elements and more.
 platform: ej2-javascript
 control: Create dual list from listview 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Create dual list from listview in ##Platform_Name## Listview control
+# Create dual list in ##Platform_Name## ListView Control
 
 The dual list contains two ListView. This allows you to move list items from one list to another using the client-side events. This section explains how to integrate the ListView control to achieve dual list.
 

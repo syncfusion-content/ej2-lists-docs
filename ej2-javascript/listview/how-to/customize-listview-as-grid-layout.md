@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize ListView as grid layout in ##Platform_Name## | Syncfusion
-description: Learn here all about Customize listview as grid layout in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+description: Learn here all about customize ListView as grid layout in Syncfusion ##Platform_Name##, it's elements and more.
 platform: ej2-javascript
 control: Customize listview as grid layout 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize listview as grid layout in ##Platform_Name## Listview control
+# Customize ListView as grid layout in ##Platform_Name##
 
 In Listview, list items can be rendered in grid layout with following data manipulations.
 

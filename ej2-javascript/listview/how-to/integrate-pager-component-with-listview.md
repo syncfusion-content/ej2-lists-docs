@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Integrate pager in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Integrate pager component with listview in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
+description: Learn here all about integrate pager in Syncfusion ##Platform_Name## ListView control, it's elements and more.
 platform: ej2-javascript
 control: Integrate pager component with listview 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Integrate pager component with listview in ##Platform_Name## Listview control
+# Integrate pager in ##Platform_Name## ListView Control
 
 The first and foremost step is to obtain the `Pager` component from `Grid`. Install the ej2-grid package using the following command.
 
