@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integrate pager component with listview in ##Platform_Name## Listview control | Syncfusion
+title: Integrate pager in ##Platform_Name## ListView Control | Syncfusion
 description: Learn here all about Integrate pager component with listview in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Integrate pager component with listview 

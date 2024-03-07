@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create dual list from listview in ##Platform_Name## Listview control | Syncfusion
+title: Create dual list in ##Platform_Name##  ListView Control | Syncfusion
 description: Learn here all about Create dual list from listview in Syncfusion ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Create dual list from listview 
